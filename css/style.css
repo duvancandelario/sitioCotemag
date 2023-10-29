@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --colorPrimario: #bda588;
+
+
+    /*BORDES*/
+    --margenesLaterales: 0px 180px 0px 180px;
+    --margenesLeftToRightDivs: 0px 0px 0px 175px;
+    --margenesRightToLeftDivs: 0px 175px 0px 0px;
+}
+
+/*SECCION DEL HEADER*/
+header{
+    width: 100%;
+    height: 38px;
+}
+
+header .toolbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: var(--colorPrimario);
+    color: white;
+}
+
+/*DIVISIONES Y PROPIEDADES DEL HEADER*/
+
+
+/*Seccion Izquierda del Header*/
+
+header .toolbar .navbarIzquierda{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 14px;
+    padding: var(--margenesLeftToRightDivs);
+}
+
+/*Seccion Derecha del Header*/
+header .toolbar .navbarDerecha{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: var(--margenesRightToLeftDivs);
+    align-items: center;
+    gap: 35px;
+    font-size: 14px;
+}
+
+/*Propiedades del select de la seccion derecha del header*/
+
+#selectLanguage{
+    background-color: var(--colorPrimario);
+    color: white;
+    border: none;
+    font-size: 11px;
+}
