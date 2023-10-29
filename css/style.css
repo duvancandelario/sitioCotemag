@@ -30,6 +30,17 @@ header .toolbar{
     color: white;
 }
 
+header .toolbar a{
+    text-decoration: none;
+    color: white;
+}
+
+header .toolbar a:hover{
+    color: rgb(240, 240, 240);
+    transition: all .3s;
+}
+
+
 /*DIVISIONES Y PROPIEDADES DEL HEADER*/
 
 
