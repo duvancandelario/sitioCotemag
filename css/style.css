@@ -76,3 +76,62 @@ header .toolbar .navbarDerecha{
     border: none;
     font-size: 11px;
 }
+
+
+/*SECCION DEL HOME O MAIN*/
+
+.hero{
+    width: 100%;
+    height: 94.9vh;
+    background-image: linear-gradient(81deg, rgba(0,61,138,1) 0%, rgba(0,61,138,0.9220938375350141) 41%, rgba(0,61,138,0.6419817927170868) 71%),url(https://skola.madrasthemes.com/wp-content/uploads/2021/03/cover-14.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*SECCION DE LA BARRA DE NAVEGACION DEL HOME*/
+
+.hero .navbarSection{
+    padding-top: 18px;
+}
+
+.hero .navbarSection .navbarHome{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--margenesLaterales);
+    color: white;
+}
+
+/*Propiedades de la imagen del navbar Home*/
+
+.hero .navbarSection .navbarHome img{
+    height: 100%;
+}
+
+/*Propiedades de la lista de la barra de navegacion del home*/
+
+.hero .navbarSection .navbarHome ul{
+    display: flex;
+    gap: 30px;
+    margin-right: 4%;
+}
+
+.hero .navbarSection .navbarHome ul li{
+    display: flex;
+    gap: 5px;
+}
+
+.hero .navbarSection .navbarHome ul li i{
+    display: flex;
+    align-items: center;
+   font-size: 12px;
+}
+
+.hero .navbarSection .navbarHome ul a{
+    text-decoration: none;
+    color: white;
+}
