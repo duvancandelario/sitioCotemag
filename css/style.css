@@ -1,3 +1,14 @@
+/*IMPORTANDO FUENTES DE GOOGLE-FONTS*/
+
+/*MONSERRAT SANT SERIF 400 BOLD*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*JOST BOLD 500 */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Montserrat&display=swap');
+
+/*LORA SAN SERIF 700 BOLD*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Lora:wght@700&family=Montserrat&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -8,6 +19,8 @@
 
 :root{
     --colorPrimario: #bda588;
+    --colorSecundario: white;
+    --colorTerciario: #183f63;
 
 
     /*BORDES*/
@@ -28,6 +41,7 @@ header .toolbar{
     display: flex;
     background-color: var(--colorPrimario);
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header .toolbar a{
@@ -52,7 +66,7 @@ header .toolbar .navbarIzquierda{
     display: flex;
     align-items: center;
     gap: 20px;
-    font-size: 14px;
+    font-size: 11px;
     padding: var(--margenesLeftToRightDivs);
 }
 
@@ -75,6 +89,7 @@ header .toolbar .navbarDerecha{
     color: white;
     border: none;
     font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -109,7 +124,7 @@ header .toolbar .navbarDerecha{
 /*Propiedades de la imagen del navbar Home*/
 
 .hero .navbarSection .navbarHome img{
-    height: 100%;
+    height: 130%;
 }
 
 /*Propiedades de la lista de la barra de navegacion del home*/
@@ -118,6 +133,7 @@ header .toolbar .navbarDerecha{
     display: flex;
     gap: 30px;
     margin-right: 4%;
+    font-family: 'Jost', sans-serif;
 }
 
 .hero .navbarSection .navbarHome ul li{
@@ -144,11 +160,19 @@ header .toolbar .navbarDerecha{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     padding: var(--margenesLaterales);
-    border: solid 1px greenyellow;
     width: 100%;
-    height: 62%;
+    height: 53%;
+}
+
+.hero .contenidoHome h2{
+    font-family: 'Lora', serif;
+    font-size: 40px;
+}
+
+.hero .contenidoHome h4{
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hero .contenidoHome a{
@@ -161,12 +185,101 @@ header .toolbar .navbarDerecha{
     border: solid 1px white;
     width: 100px;
     height: 50px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*HOVER BOTON APLICAR DEL HOME*/
 
 .hero .contenidoHome a:hover{
     background-color: white;
-    color: blue;
+    color: var(--colorTerciario);
     transition: all .3s;
+}
+
+.hero .cardHome{
+    width: 100%;
+    height: 335px;
+    margin-top: 50px;
+    padding: var(--margenesLaterales);
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.hero .cardHome .crd{
+    width: 380px;
+    height: 335px;
+    border-radius: 5px;
+    background-color: red;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    box-shadow: 4px 7px 34px -7px rgba(0,0,0,0.75);
+    font-family: 'Lora', serif;
+}
+
+.hero .cardHome .crd:hover{
+    margin-top: -10px;
+    transition: all .5s; 
+}
+
+.hero .cardHome .crd .chevronRight{
+    font-size: 15px;
+    padding: 5px;
+}
+
+.hero .cardHome .cardHomeUno{
+    background-color: var(--colorPrimario);
+    color: var(--colorSecundario);
+}
+
+.hero .cardHome .cardHomeUno i{
+    font-size: 40px;
+}
+
+.hero .cardHome .cardHomeUno h1{
+    font-size: 20px;
+}
+
+.hero .cardHome .cardHomeUno a{
+    text-decoration: none;
+    color: var(--colorSecundario);
+}
+
+.hero .cardHome .cardHomeDos{
+    background-color: var(--colorSecundario);
+    color: var(--colorTerciario);
+}
+
+.hero .cardHome .cardHomeDos i{
+    font-size: 40px;
+}
+
+.hero .cardHome .cardHomeDos h1{
+    font-size: 20px;
+}
+
+.hero .cardHome .cardHomeDos a{
+    text-decoration: none;
+    color: var(--colorTerciario);
+}
+
+.hero .cardHome .cardHomeTres{
+    background-color: var(--colorTerciario);
+    color: var(--colorSecundario);
+}
+
+.hero .cardHome .cardHomeTres i{
+    font-size: 40px;
+}
+
+.hero .cardHome .cardHomeTres h1{
+    font-size: 20px;
+}
+
+.hero .cardHome .cardHomeTres a{
+    text-decoration: none;
+    color: var(--colorSecundario);
 }
