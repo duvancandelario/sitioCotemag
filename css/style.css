@@ -283,3 +283,44 @@ header .toolbar .navbarDerecha{
     text-decoration: none;
     color: var(--colorSecundario);
 }
+
+/*SEGUNDA SECCION, SECCION DE CURSOS*/
+
+.coursesSection{
+    width: 100%;
+    height: 100vh;
+    padding: var(--margenesLaterales);
+    display: flex;
+    align-items: center;
+    background-color: red;
+}
+
+
+.coursesSection .cursos{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: solid 1px white;
+    margin-top: 40px;
+    width: 100%;
+    height: 300px;
+}
+
+.coursesSection .cursos .contenedorCursos{
+    width: 100%;
+    height: 100%;
+    padding: var(--margenesLaterales);
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.coursesSection .cursos .contenedorCursos .crdCursos{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: solid 1px white;
+    margin-top: 40px;
+    width: 100%;
+    height: 300px;
+}
