@@ -358,3 +358,15 @@ header .toolbar .navbarDerecha{
    margin-bottom: -40px;
    margin-right: 20px;
 }
+
+.iframe-cotemag{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+iframe{
+    border-radius: 10px;
+}
