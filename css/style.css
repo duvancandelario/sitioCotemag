@@ -370,3 +370,45 @@ header .toolbar .navbarDerecha{
 iframe{
     border-radius: 10px;
 }
+
+/*SECCION NOTICIAS Y EVENTOS*/
+
+.newEvents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    background-color: #f6f2ee;
+}
+
+.newEvents .cardsEvents{
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*SECCION ESTUDIANTES E INSTRUCTOR*/
+.studentInstructor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f2ee;
+}
+
+.studentInstructor .cardStudents{
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*SECCION FOOTER*/
+
+footer{
+    width: 100%;
+    height: 100vh;
+    background-color: #183f63;
+}
